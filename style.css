@@ -67,6 +67,12 @@ a {
 .details {
   display: flex;
   align-items: center;
+  span{
+    @media (max-width:1024px) {
+      display: none;
+      
+    }
+  }
 }
 .details:not(:first-child) {
   margin-left: 1.5rem;
@@ -160,6 +166,12 @@ a {
   height: calc(100vh - 6rem);
   display: flex;
   align-items: center;
+  span{
+    @media (max-width:1024px) {
+      display: none;
+      
+    }
+  }
 }
 .header_wrapper {
   width: 60%;
@@ -475,6 +487,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 768px) {
+      display:grid;
+      justify-content: center;
+      .user_details{
+        margin: 3px;
+        margin-bottom: -10px;
+      }
+  }
 }
 .review_img {
   width: 6rem;
@@ -804,6 +824,12 @@ footer {
   height: 100vh;
   width: 100%;
   padding: 90px 0;
+  span{
+    @media (max-width:1024px) {
+      display: none;
+      
+    }
+  }
   
 }
 .pic {
