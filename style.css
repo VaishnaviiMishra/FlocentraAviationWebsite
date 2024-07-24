@@ -98,6 +98,7 @@ a {
   
 }
 
+
 .container{
   max-width: 1440px;
   margin:auto;
@@ -194,6 +195,11 @@ a {
   font-weight: 900;
   margin-bottom: 2rem;
   animation: slidein 4s forwards, showup 8s infinite 30s;
+  @media (max-width:780px) {
+    font-size:40px;
+    
+  }
+ 
   
 }
 
@@ -727,6 +733,11 @@ footer {
 }
 .section_title {
   width: 100%;
+  color: #333;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;   
   text-align: center;
   margin-bottom: 5rem;
   margin-top: 5rem;
@@ -743,10 +754,11 @@ footer {
   margin-bottom: 20px;
 }
 .team_footer {
-  background-color: var(--color-primary-2);
+  background-color: rgba(0, 0, 0, 0.3);
   margin-top: -1rem;
-  padding: 2rem 1rem;
+  padding: 20px;
   color: var(--color-secondary-1);
+  text-align: center;
 }
 
 
@@ -794,6 +806,12 @@ footer {
 
   .team_designation {
     font-size: 0.9em;
+    span2{
+      @media (max-width:780px) {
+        display: none;
+        
+      }
+    }
   }
   
   
@@ -834,10 +852,10 @@ footer {
 }
 .pic {
   height: auto;
-  width: 400px;
-  border-radius: 32px;
+  width: 500px;
+  
   margin: 30px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  
   @media (max-width:780px) {
     width: 300px;
     
@@ -858,6 +876,7 @@ footer {
 }
 .text {
   width: 540px;
+  margin-left: 20px;
 }
 .text h2 {
   color: #333;
@@ -872,13 +891,14 @@ footer {
   margin-bottom: 20px;
 }
 span {
-  color: #0f1525;
+  color: #ffffff;
 }
 .text p {
   color: #333;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 1px;
+  margin: 10px;
 }
 .data {
   margin-top: 30px;
@@ -898,8 +918,11 @@ span {
 }
 
 .team_designation{
-  color: #666c89;
+  color: var(--color-heading);
   margin-top: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 0px;
 
 }
 
@@ -1038,4 +1061,68 @@ span {
 
 .back-to-top:hover {
   background-color: var(--color-font); 
+}
+
+.moreinfoabout h2{
+  color: #333;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center; 
+}
+
+
+
+.moreinfoabout h4 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.moreinfoabout p{
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  
+}
+
+.moreinfoabout{
+  background-color: rgba(22, 16, 46, 0.1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  @media (max-width:780px) {
+    margin-top: 40px; 
+      
+  }
+
+}
+
+.aboutmoreinfo p{
+  text-align: center;
+  padding-right: 20px;
+  grid-row:auto; 
+  @media (max-width:780px) {
+    font-size: 15px;    
+  }
+  span2{
+    @media(max-width:780px){
+      display: none;
+    }
+  }
+  
+} 
+
+.vertical-line {
+  border-left: 2px solid rgba(0, 0, 0, 0.4); 
+  height: 200px; 
+  margin: 0 20px; 
+ 
 }
