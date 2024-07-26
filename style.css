@@ -396,7 +396,7 @@ a {
 }
 
 .why_img_1, .why_img_2 {
-  width: 100%;
+  width: 105%;
   height: auto;
   object-fit: cover;
   border-radius: 5px;
@@ -732,35 +732,57 @@ footer {
   width: 5rem;
 }
 .section_title {
-  width: 100%;
-  color: #333;
-  font-size: 50px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  text-align: center;
+  color: #02080f;
+  font-size: 32px;
+  margin-bottom: 30px;
+  position: relative;
+ 
   text-align: center;   
   text-align: center;
   margin-bottom: 5rem;
   margin-top: 5rem;
 }
+
+.section_title::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #06182b;
+  width: 80px;
+  margin: 10px auto 0;
+}
+
 .team {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 .team_img {
   width: 100%;
-  border-radius: 100px;
-  margin-bottom: 20px;
+  height: auto;
+  border-bottom: 2px solid #05101b;
 }
 .team_footer {
-  background-color: rgba(0, 0, 0, 0.3);
-  margin-top: -1rem;
   padding: 20px;
-  color: var(--color-secondary-1);
+ 
+}
+.team_card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
+.team_card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
 
 .teamheading{
   text-align: center;
@@ -769,17 +791,8 @@ footer {
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-  .about-us .about {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .team {
     flex-direction: column;
-  }
-
-  .team_card {
-    width: 90%;
   }
 
   
@@ -788,20 +801,11 @@ footer {
 }
 
 @media (max-width: 580px) {
-  .about-us .text h2 {
-    font-size: 1.5em;
-    
-    
-  }
-
-  .about-us .text h5 {
-    font-size: 1.2em;
-    
-  }
-
 
   .team_name {
-    font-size: 1.2em;
+    margin: 10px 0;
+    color: #050e18;
+    font-size: 24px;
   }
 
   .team_designation {
@@ -817,6 +821,32 @@ footer {
   
 }
 
+.team_footer h4 {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.team_designation {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.team_designation span2 {
+  font-weight: bold;
+  color: #05111e;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team {
+      flex-direction: column;
+      align-items: center;
+  }
+}
 
 .about_mini_header {
   background-image: url(../Images/whyus1.jpg);
@@ -837,61 +867,52 @@ footer {
 }
 
 .about-us {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  padding: 90px 0;
-  span{
-    @media (max-width:1024px) {
-      display: none;
-      
-    }
-  }
-  
+  flex-wrap: wrap; 
+  align-items: center; 
 }
-.pic {
-  height: auto;
-  width: 500px;
-  
-  margin: 30px;
-  
-  @media (max-width:780px) {
-    width: 300px;
-    
-  }
-  @media (max-width:1024px) {
-    width: 300px;
-    
-  }
+.about-us .pic {
+  max-width: 200px;
+  margin-right: 20px;
+  border-radius: 8px;  
+  transition: transform 0.3s ease;
+}
+.about-us .pic:hover {
+  transform: scale(1.05);
+}
 
-}
-.about {
-  width: 1130px;
-  max-width: 85%;
+.about-us .about {
+  width: 100%;
+  
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
-.text {
-  width: 540px;
-  margin-left: 20px;
+.about-us .text {
+  flex: 1;
 }
-.text h2 {
-  color: #333;
-  font-size: 50px;
-  font-weight: 600;
-  margin-bottom: 10px;
+
+.about-us h2 {
+  margin-top: 0;
+  color: var(--color-primary-2);
+  font-size: 28px;
+    border-bottom: 2px solid #010102;
+    padding-bottom: 5px;
 }
-.text h5 {
-  color: #333;
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 20px;
+
+.about-us h5 {
+  margin: 10px 0;
+  color: #666;
 }
-span {
-  color: #ffffff;
+.about-us p {
+  text-align: justify;
 }
 .text p {
   color: #333;
@@ -899,6 +920,10 @@ span {
   line-height: 25px;
   letter-spacing: 1px;
   margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 .data {
   margin-top: 30px;
@@ -1063,66 +1088,74 @@ span {
   background-color: var(--color-font); 
 }
 
-.moreinfoabout h2{
-  color: #333;
-  font-size: 50px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-align: center; 
-}
 
 
 
-.moreinfoabout h4 {
-  color: #333;
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.moreinfoabout p{
-  color: #333;
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: 1px;
-  text-align: center;
-  margin-right: 5px;
+/* More Info section */
+.moreinfoabout {
+  background-color: #fff;
+  padding: 20px;
   margin-bottom: 20px;
-  
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.moreinfoabout{
-  background-color: rgba(22, 16, 46, 0.1);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 0 auto;
-  @media (max-width:780px) {
-    margin-top: 40px; 
-      
-  }
-
+.moreinfoabout h2 {
+  color: var(--color-heading);
+  font-size: 24px;
+    border-bottom: 2px solid #050b10;
+    padding-bottom: 5px;
 }
 
-.aboutmoreinfo p{
-  text-align: center;
-  padding-right: 20px;
-  grid-row:auto; 
-  @media (max-width:780px) {
-    font-size: 15px;    
-  }
-  span2{
-    @media(max-width:780px){
-      display: none;
-    }
+
+
+/* Mission section */
+.aboutmoreinfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.aboutmoreinfo p:hover {
+  background-color: #e2e6ea;
+}
+.text p:hover {
+  background-color: #e2e6ea;
+}
+.aboutmoreinfo span2 {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #051321;
+}
+.aboutmoreinfo .vertical-line {
+  display: none;
+}
+
+.aboutmoreinfo span2 {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+      flex-direction: row;
   }
   
-} 
+  .aboutmoreinfo .vertical-line {
+      display: block;
+      width: 2px;
+      background-color: #ccc;
+      margin: 0 10px;
+  }
 
-.vertical-line {
-  border-left: 2px solid rgba(0, 0, 0, 0.4); 
-  height: 200px; 
-  margin: 0 20px; 
- 
+  .aboutmoreinfo p {
+      margin-right: 10px;
+  }
+
+  .aboutmoreinfo p:last-child {
+      margin-right: 0;
+  }
 }
