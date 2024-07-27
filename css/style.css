@@ -90,6 +90,9 @@ a {
   
   .nav_icon{
     width: 15%;
+    margin-right: 1rem;
+
+
   }
   .top_details {
       flex-direction: row;
@@ -167,10 +170,10 @@ a {
 .nav_icons {
   display: flex;
   align-items: center;
-  margin-right: 2.5rem;
+  margin-right: 1.5rem;
 }
 .nav_icon {
-  margin: 0rem 1rem;
+  margin: 0rem 0.5rem;
 }
 
 .nav_btn {
@@ -423,13 +426,17 @@ a {
   border-radius: 5px;
   transition: ease 3s all;
   align-items: center;
+  @media (max-width:780px) {
+    width: 80%;
+    
+  }
 
 }
 
 .why_img_1:hover, .why_img_2:hover, .team_img:hover, .pic:hover{
   transform: scale(1.05);
 }
-
+ 
 .counter {
   margin-top: 7rem;
   padding: 3rem;
@@ -487,7 +494,12 @@ a {
 }
 
 
-
+.review_star{
+  @media (max-width:780px) {
+    width: 10%;
+    
+  }
+}
 
 /*Testimony*/
 
@@ -497,8 +509,14 @@ a {
   margin-top: 6rem;
   padding: 3rem;
   background-color: var(--color-secondary-1);
+  @media (max-width:780px) {
+    font-size: 12px;
+    
+  }
+  
   
 }
+
 
 .review_card2 {
   width: 100%;
@@ -528,6 +546,12 @@ a {
   height: 6rem;
   object-fit: cover;
   border-radius: 10rem;
+  @media (max-width:780px) {
+    width: 3rem;
+    height: 3rem;
+    
+    
+  }
 }
 .user_details {
   text-align: left;
@@ -543,6 +567,7 @@ a {
 .review_rating {
   text-align: left;
   margin-top: 3rem;
+  
 }
 .form_section_header {
   text-align: left !important;
@@ -561,15 +586,16 @@ a {
 }
 
 /* contact */
-.contact {
-  width: 100%;
-  padding: 10rem;
-  background-color: var(--color-primary-2);
-}
+
 .contact{
   width: 100%;
   padding: 10rem;
   background-color: var(--color-primary-2);
+  @media (max-width:780px) {
+    padding-top: 10rem;
+    padding-left: 1px;
+    
+  }
 }
 .contact2 {
   width: 100%;
@@ -896,6 +922,7 @@ footer {
   display: flex;
   flex-wrap: wrap; 
   align-items: center; 
+  
 }
 .about-us .pic {
   max-width: 200px;
@@ -915,6 +942,11 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  @media (max-width:780px) {
+    display: flex;
+    flex-direction: column;
+    
+  }
 }
 .about-us .text {
   flex: 1;
@@ -1179,4 +1211,19 @@ footer {
   .aboutmoreinfo p:last-child {
       margin-right: 0;
   }
+}
+
+.news_title{
+  @media (max-width:780px) {
+    font-size: 18px;
+    
+  }
+  
+}
+
+.news_p{
+  @media (max-width:780px) {
+    font-size: 12px; 
+  }
+  
 }
