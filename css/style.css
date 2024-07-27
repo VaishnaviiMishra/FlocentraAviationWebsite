@@ -348,8 +348,7 @@ a {
 
 .why_container {
   width: 100%;
-  padding: 4rem;
-  
+  padding: 4rem;  
   background-color: var(--color-secondary-1);
   margin-top: -10rem;
   display: grid;
@@ -359,9 +358,9 @@ a {
 
 .why_secondary_heading {
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 0.6rem;
+  padding: 1rem;
   border-left: 4px solid var(--color-primary-1);
-  width: 15%;
+  width: 25%;
   margin-bottom: 1.3rem;
   
 }
@@ -1224,6 +1223,12 @@ footer {
 .news_p{
   @media (max-width:780px) {
     font-size: 12px; 
+  }
+
+  @media (max-width:480) {
+    font-size: 8px;
+    padding-right: 10px;
+    
   }
   
 }
