@@ -699,6 +699,9 @@ a {
   width: 40%;
   height: 100%;
   object-fit: cover;
+  @media (max-width:700px) {
+    display: none;  
+  }
 }
 
 .news_content {
