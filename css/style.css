@@ -112,6 +112,13 @@ a {
   }
 }
 
+@media (max-width:500px) {
+  .hidenav{
+    display: none;
+  }
+  
+}
+
 /* header */
 .header {
   width: 100%;
