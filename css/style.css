@@ -63,10 +63,12 @@ a {
 }
 .top_details {
   display: flex;
+  margin-right: 1%;
 }
 .details {
   display: flex;
   align-items: center;
+  
   span{
     @media (max-width:1024px) {
       display: none;
@@ -88,17 +90,18 @@ a {
   font-size: 1.4rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   
   .nav_icon{
-    width: 25%;
-    margin-right: 1rem;
+    width: 55%;
+    margin-right: 20%;
 
 
   }
   .top_details {
       flex-direction: row;
       align-items: flex-start;
+      margin-right: 2%;
   }
 
   .details_text {
@@ -774,7 +777,7 @@ a {
 .news_img{
   
   object-fit: cover;
-  @media (max-width:700px) {
+  @media (max-width:900px) {
     display: none;  
   }
 }
@@ -1409,5 +1412,98 @@ footer {
         }
       }
     }
+  }
+}
+
+
+
+.footer {
+  background-color: var(--color-primary-2);
+  color: #fefefe;
+  
+  
+  width: 100%;
+  
+  left: 0;
+}
+
+.footer .heading {
+  color: #fefefe;
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.services p:hover{
+  font-weight: bold;
+  
+}
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+  
+}
+
+.footer .content p {
+  margin-bottom: 1.3rem;
+  
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+  color: #091242;
+  background-color: white;
+  
+}
+.footer .content h4:hover{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+footer hr {
+  margin: 1rem 0;
+}
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .footer {
+    position: unset;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
   }
 }
