@@ -690,10 +690,11 @@ a {
   background-color: var(--color-primary-2);
   @media (max-width:780px) {
     padding-top: 10rem;
-    padding-left: 1px;
-    
+    padding-left: 8%;
+    padding-right: 8%;  
   }
 }
+
 .contact2 {
   width: 100%;
   padding: 10rem;
