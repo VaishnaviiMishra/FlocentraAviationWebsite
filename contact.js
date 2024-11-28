@@ -47,7 +47,7 @@ function reset() {
 
 // Initialize EmailJS
 (function(){
-  emailjs.init("uqSDmH1-vWVLTLU0n"); // Replace with your EmailJS user ID
+  emailjs.init("uqSDmH1-vWVLTLU0n"); 
 })();
 
 
