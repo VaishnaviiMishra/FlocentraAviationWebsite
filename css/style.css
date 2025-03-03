@@ -63,6 +63,7 @@ a {
 }
 .top_details {
   display: flex;
+  margin-top: 0.4%;
   margin-right: 1%;
 }
 .details {
@@ -75,6 +76,9 @@ a {
       
     }
   }
+}
+.logo_box{
+  margin-top: 1%;
 }
 
 
